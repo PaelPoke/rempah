@@ -1,0 +1,309 @@
+.left-feature{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    column-gap: 35px;
+    align-items: center;
+}
+    .menu{
+        padding: 10px 11px 6px 11px;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .menu:hover{
+        background-color: rgb(61, 60, 60);
+    }
+
+    
+    .menu:active{
+        background-color: rgb(68, 68, 68);
+    }
+
+    .menu-button{
+        width: 30px;
+        margin-top: 0px;
+        filter: invert(100%);
+    }
+
+    .logo-button{
+        background-color: rgb(255, 0, 0);
+        width: 50px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .logo-button:hover{
+        background-color: rgb(229, 9, 20);
+    }
+
+    .logo-button:active{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .web-title{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -30px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.center-feature{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    .search-box{
+        display: flex;
+        flex-direction: row;
+        border: solid 1px rgb(170, 170, 170);
+        flex: 1;
+        border-radius: 25px;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    .search-bar{
+        width: 100%;
+        border: solid 1px transparent;
+        background-color: transparent;
+        padding-left: 15px;
+        border-radius: 25px 0px 0px 25px;
+        font-size: 17px;
+        color: white;
+    }
+
+    .search-bar:focus{
+        outline: none;
+        border: solid 1px blue;
+        width: 100%;
+        padding-left: 16px;
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+    }
+
+    .search-button{
+        width: fit-content;
+        padding-top: 5px;
+        background-color: rgb(61, 60, 60);
+        padding: 8px 20px 5px 20px;
+        border-radius: 0px 25px 25px 0px;
+        cursor: pointer;
+    }
+
+    .search-button:hover{
+        background-color: rgb(68, 68, 68);
+    }
+
+    .search-button:active{
+        background-color: rgb(61, 60, 60);
+    }
+
+    .search-logo{
+        width: 25px;
+    }
+
+    .voice-search-icon{
+        width: 30px;
+        filter: invert(100%);
+    }
+
+    .voice-search-button{
+        background-color: rgb(61, 60, 60);
+        border: none;
+        border-radius: 100%;
+        width: fit-content;
+        padding: 5px 7px 5px 7px;
+        cursor: pointer;
+    }
+
+    .voice-search-button:hover{
+        background-color: rgb(68, 68, 68);
+    }
+
+    .voice-search-button:active{
+        background-color: rgb(61, 60, 60);
+    }
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.right-feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    column-gap: 20px;
+}
+    .pp{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 100%; 
+        cursor: pointer;
+    }
+
+    .create-button{
+        background-color: rgb(61, 60, 60);
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        color: white;
+        height: 40px;
+        border: none;
+        border-radius: 18px;
+        padding-right: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .create-button:hover{
+        background-color: rgb(68, 68, 68);
+    }
+
+    .create-button:active{
+        background-color: rgb(61, 60, 60);
+    }
+
+    .plus-icon{
+        font-size: 40px; 
+        font-weight: 100;
+        margin-top: -2px;
+    }
+
+    .create-text{
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .notification-button{
+        background-color: rgb(61, 60, 60);
+        border: none;
+        border-radius: 100%;
+        padding: 5px 8px 5px 8px;
+        cursor: pointer;
+    }
+
+    .notification-button:hover{
+        background-color: rgb(68, 68, 68);
+    }
+
+    .notification-button:active{
+        background-color: rgb(61, 60, 60);
+    }
+
+    .notification-icon{
+        width: 30px;
+        filter: invert(100%);
+    }
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*animation*/
+    @media only screen and (max-width: 768px) {
+    .web-title, .create-button, .notification-button {
+    display: none;
+    }
+    }
+
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*description*/
+    .search-button-description{
+        position: absolute;
+        z-index: 100;
+        background-color: rgb(117, 117, 117, 0);
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        margin-left: -23px;
+        margin-top: 10px;
+        color: white;
+        transition: all 0.5s;
+        cursor: default;
+        pointer-events: none;
+        display: flex;
+    }
+
+    .search-button:hover .search-button-description{
+        background-color: rgb(117, 117, 117, 0.5);
+    }
+
+    .search-button:hover .description-hover1-text{
+        opacity: 1;
+    }
+
+    .voice-search-description{
+        position: absolute;
+        z-index: 100;
+        background-color: rgb(117, 117, 117, 0);
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        margin-left: -65px;
+        margin-top: 10px;
+        transition: all 0.5s;
+        cursor: default;
+        pointer-events: none;
+        display: flex;
+    }
+
+    .voice-search-button:hover .voice-search-description{
+        background-color: rgb(117, 117, 117, 0.5);
+    }
+
+    .voice-search-button:hover .description-hover1-text{
+        opacity: 1;
+    }
+
+    .notification-description{
+        position: absolute;
+        z-index: 100;
+        background-color: rgb(117, 117, 117, 0);
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        margin-left: -30px;
+        margin-top: 10px;
+        transition: all 0.5s;
+        cursor: default;
+        pointer-events: none;
+        display: flex;
+    }
+    
+    .notification-button:hover .notification-description{
+        background-color: rgb(117, 117, 117, 0.5)
+    }
+
+    .notification-button:hover .description-hover1-text{
+        opacity: 1;
+    }
+
+    .description-hover1-text{
+        opacity: 0;
+        z-index: 200;
+        position: relative;
+        color: white;
+        transition: all 0.6s;
+    }

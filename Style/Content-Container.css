@@ -1,0 +1,225 @@
+.content-container{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: transparent;
+    right: 0px;
+    left: 105px;
+    top: 72px;
+    z-index: 0;
+    overflow: auto;
+    max-height: 80vh;
+    padding: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1900px){
+    .content-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1400px){
+    .content-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px){
+    .content-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px){
+    .content-container{
+        grid-template-columns: 1fr;
+    }
+}
+/*scrollbar------------------------------------>*/
+/*scrollbar------------------------------------>*/
+/*scrollbar------------------------------------>*/
+/*scrollbar------------------------------------>*/
+.content-container::-webkit-scrollbar {
+    width: 15px; 
+    height: 12px;
+    background-color: #333; 
+}
+
+.content-container::-webkit-scrollbar-thumb {
+    background-color: #555; 
+}
+
+.content-container::-webkit-scrollbar-thumb:hover {
+    background-color: #666; 
+}
+
+.content-container::-webkit-scrollbar-track {
+    background-color: #333; 
+}
+/*thumbnail-settings--------------------------->*/
+/*thumbnail-settings--------------------------->*/
+/*thumbnail-settings--------------------------->*/
+/*thumbnail-settings--------------------------->*/
+.thumbnail-container{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    row-gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.thumbnail-container:hover{
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.thumbnail-settings1{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+    width: 100%;
+}
+
+.thumbnail-settings1:hover{
+    border-radius: 0px;
+}
+
+.video-info{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    cursor: pointer;
+    border: none;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+/*channel-setting-description------------------------------------>*/
+/*channel-setting-description------------------------------------>*/
+/*channel-setting-description------------------------------------>*/
+/*channel-setting-description------------------------------------>*/
+.video-channel{
+    background-color: transparent;
+    border: none;
+}
+
+.channel-settings1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.channel-description{
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    border: solid 1px rgb(16,16,16);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+    z-index: -10;
+    padding: 10px;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    opacity: 0;
+    transition: all  0.5s;
+}
+
+.channel-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.channel-subscriber{
+    color: rgb(168, 168, 168);
+}
+
+.channel-settings1:hover +.channel-description{
+    z-index: 100;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*video-description-and-info------------------------------------------->*/
+/*video-description-and-info------------------------------------------->*/
+/*video-description-and-info------------------------------------------->*/
+/*video-description-and-info------------------------------------------->*/
+.video-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: transparent;
+    row-gap: 5px;
+}
+
+.video-title{
+    font-weight: bold;
+}
+
+.video-channel-name{
+    margin-bottom: 2px;
+}
+
+.video-watched-time{
+    background-color: transparent;
+    width: fit-content;
+}
+
+.video-date{
+    background-color: transparent;
+    flex: 1;
+}
+
+.video-description{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.video-settings-menu{
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+
+.video-settings-menu-button{
+    position: absolute;
+    right: -7px;
+    margin-top: -6px;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    padding: 12px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-settings-menu-button:active{
+    background-color: rgba(255,255,255,0.1);
+    transition: none;
+}
+
+.video-settings-menu-button:focus{
+    background-color: transparent;
+    transition: background-color 0.1s 0.1s;
+}
+
+.video-settings-menu-icon{
+    width: 100%;
+    filter: invert(100%);
+}

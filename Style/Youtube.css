@@ -1,0 +1,22 @@
+body{
+    height: fit-content;
+    background-color: rgb(24, 24, 24);
+    overflow-y: hidden;
+}
+
+    @media (max-height: 600px) {
+        body {
+            overflow-y: auto;
+        }
+    }
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
